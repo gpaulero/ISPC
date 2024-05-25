@@ -1,0 +1,34 @@
+Inicio del programa
+    Imprimir "Bienvenidos a la calculadora de descuentos de leches"
+    Solicitar al usuario que ingrese la cantidad de leche a llevar
+    Leer cantidad
+    Calcular precio_leche como cantidad * 1000
+    Calcular precio_leche_jub como cantidad * 900
+    Solicitar al usuario que indique si es jubilado (s/n)
+    Leer jubilado
+    
+    Si jubilado es igual a "s" entonces
+        Si cantidad es menor o igual a 12 entonces
+            Calcular precio_sin_desc como cantidad * 900
+            Imprimir "El valor de las leches tiene 10% por ser jubilado. En total es: $", precio_sin_desc
+        Sino si cantidad es mayor que 12 y menor o igual que 24 entonces
+            Calcular descuento como (precio_leche_jub * 10) / 100
+            Calcular precio como precio_leche_jub - descuento
+            Imprimir "Como compraste más de 12 pero menos de 24 tienes un 10% de descuento y además otro 10% por ser jubilado. En total es: $", precio
+        Sino
+            Calcular descuento como (precio_leche_jub * 15) / 100
+            Calcular precio como precio_leche_jub - descuento
+            Imprimir "Como compraste más de 24 tienes un 15% de descuento y además otro 10% por ser jubilado. En total es: $", precio
+    Sino
+        Si cantidad es menor o igual a 12 entonces
+            Calcular precio_sin_desc como cantidad * 1000
+            Imprimir "El valor de las leches es de $", precio_sin_desc
+        Sino si cantidad es mayor que 12 y menor o igual que 24 entonces
+            Calcular descuento como (precio_leche * 10) / 100
+            Calcular precio como precio_leche - descuento
+            Imprimir "Como compraste más de 12 pero menos de 24 tienes un 10% de descuento y en total es: $", precio
+        Sino
+            Calcular descuento como (precio_leche * 15) / 100
+            Calcular precio como precio_leche - descuento
+            Imprimir "Como compraste más de 24 tienes un 15% de descuento y en total es: $", precio
+Fin del programa
