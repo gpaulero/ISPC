@@ -3,8 +3,11 @@
 Detallar los datos de los integrantes del grupo: 
 
 Nombre y apellido: Gonzalo Paulero
+
 DNI: 35278960
+
 Mail: gpaulero@gmail.com
+
 Link: https://github.com/gpaulero/ISPC.git
 
 **
