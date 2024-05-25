@@ -11,7 +11,9 @@ Mail: gpaulero@gmail.com
 Link: https://github.com/gpaulero/ISPC.git
 
 **
+
 En la sección WIKI estan los analisis, las preguntas y lo correspondiente BD.
+
 **
 Descripción de la propuesta de proyecto elegida:
 El Gestor de Tareas Personales es una aplicación diseñada para ayudar a los usuarios a organizar y gestionar sus tareas diarias de manera eficiente. 
