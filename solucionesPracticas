@@ -1,0 +1,36 @@
+print ("Bienvenidos a la calculadora de descuentos de leches")
+cantidad = int(input("El precio de la leche es de $1000, ingrese la cantidad a llevar: "))
+precio_leche = (cantidad * 1000)
+precio_leche_jub = (cantidad * 900)
+jubilado = input("Es usted jubiliado s/n ")
+
+if jubilado == "s":
+
+  if cantidad <= 12:
+    precio_sin_desc = cantidad * 900
+    print(f"El valor de las leches tiene 10% por ser jubilado.En total es: ${precio_sin_desc}")
+
+  elif cantidad > 12 and cantidad <= 24:
+    descuento = (precio_leche_jub *10) / 100
+    precio = precio_leche_jub - descuento
+    print(f"Como compraste mas de 12 pero menos de 24 tenes un 10% de descuento y además otro 10% por ser jubilado. En total es: ${precio}")
+
+  elif cantidad > 24:
+    descuento = (precio_leche_jub *15) / 100
+    precio = precio_leche_jub - descuento
+    print(f"Como compraste mas de 24 tenes un 15% de descuento y además otro 10% por ser jubilado. En total es: ${precio}")
+
+else:
+   if cantidad <= 12:
+    precio_sin_desc = cantidad * 1000
+    print(f"El valor de las leches es de ${precio_sin_desc}")
+
+   elif cantidad > 12 and cantidad <= 24:
+    descuento = (precio_leche *10) / 100
+    precio = precio_leche - descuento
+    print(f"Como compraste mas de 12 pero menos de 24 tenes un 10% de descuento y en total es: ${precio}")
+
+   elif cantidad > 24:
+    descuento = (precio_leche *15) / 100
+    precio = precio_leche - descuento
+    print(f"Como compraste mas de 24 tenes un 15% de descuento y en total es: ${precio}")
