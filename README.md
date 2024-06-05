@@ -87,8 +87,7 @@ gestor_tareas/
 
 
 # **Diagrama de Entidad-Relación (ERD)**
-![Diagrama](https://github.com/gpaulero/ISPC/assets/169163764/449d375b-82a0-40a6-a0db-23e7adc5649b)
-
+![Diagrama](![Diagrama](https://github.com/gpaulero/ISPC/assets/169163764/2478ea6a-0f54-40ec-ab90-caf05bb0c8cc)
 
 **Entidades y Atributos**
 
