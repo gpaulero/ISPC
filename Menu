@@ -1,0 +1,43 @@
+Mostrar "Bienvenido al Gestor de Tareas Personales"
+
+Mientras el usuario no elija "Salir" hacer
+
+    Mostrar "Menú Principal"
+
+    Mostrar "1. Crear una nueva tarea"
+
+    Mostrar "2. Ver todas las tareas"
+
+    Mostrar "3. Editar una tarea"
+
+    Mostrar "4. Eliminar una tarea"
+
+    Mostrar "5. Salir"
+
+    Leer opción del usuario
+
+    Si opción == 1 entonces
+
+        Llamar a la función CrearTarea()
+
+    Sino si opción == 2 entonces
+
+        Llamar a la función VerTareas()
+
+    Sino si opción == 3 entonces
+
+        Llamar a la función EditarTarea()
+
+    Sino si opción == 4 entonces
+
+        Llamar a la función EliminarTarea()
+
+    Sino si opción == 5 entonces
+
+        Mostrar "Gracias por usar el Gestor de Tareas Personales"
+
+        Salir del programa
+
+    Fin Si
+
+Fin Mientras
