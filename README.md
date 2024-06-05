@@ -61,6 +61,31 @@ Alcance del Proyecto
 - Mensajes de Bienvenida y Despedida: La aplicación mostrará mensajes amigables al iniciar y cerrar la sesión.
 - Confirmaciones y Notificaciones: Se mostrarán confirmaciones después de cada operación para asegurar al usuario que la acción se ha completado exitosamente.
 
+# **Estructura del Proyecto**
+
+gestor_tareas/
+
+│
+
+├── main.py
+
+├── tareas.py
+
+├── usuarios.py
+
+├── menu.py
+
+**Descripción de los Archivos**
+
+1- main.py: Archivo principal de la aplicación. Contiene el menú de opciones y hace uso de funciones definidas en otros módulos.
+
+2- tareas.py: Contiene las funciones relacionadas con la gestión de tareas (crear, ver, editar, eliminar). En esta etapa, las funciones solo imprimen mensajes.
+
+3- usuarios.py: Contiene las funciones relacionadas con la gestión de usuarios. En esta etapa, las funciones solo imprimen mensajes.
+
+4- menu.py: Contiene la lógica para mostrar el menú y manejar la navegación del usuario. Llama a las funciones definidas en tareas.py y usuarios.py.
+
+
 # **Diagrama de Entidad-Relación (ERD)**
 **Entidades y Atributos**
 
