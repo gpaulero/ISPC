@@ -60,3 +60,53 @@ Alcance del Proyecto
 
 - Mensajes de Bienvenida y Despedida: La aplicación mostrará mensajes amigables al iniciar y cerrar la sesión.
 - Confirmaciones y Notificaciones: Se mostrarán confirmaciones después de cada operación para asegurar al usuario que la acción se ha completado exitosamente.
+
+# **Diagrama de Entidad-Relación (ERD)**
+**Entidades y Atributos**
+
+1. Usuario
+
+- ID_Usuario (Clave primaria)
+- Nombre
+- Correo Electrónico
+
+2. Tarea
+
+- ID_Tarea (Clave primaria)
+- Título
+- Descripción
+- Prioridad
+- Fecha de Vencimiento
+- Categoría
+- ID_Usuario (Clave foránea)
+
+3. Relaciones y Cardinalidades
+- Usuario - Tarea
+- Relación: "Posee"
+- Cardinalidad:
+- Un Usuario puede poseer muchas Tareas (1).
+- Una Tarea es poseída por un solo Usuario (N:1).
+
+# **Descripción del Diagrama ER**
+
+1- Entidad Usuario:
+
+ID_Usuario: Un identificador único para cada usuario.
+- Nombre: El nombre del usuario.
+- Correo Electrónico: El correo electrónico del usuario.
+- Contraseña: La contraseña del usuario para acceder a la aplicación.
+
+2- Entidad Tarea:
+
+- ID_Tarea: Un identificador único para cada tarea.
+- Título: El título de la tarea.
+- Descripción: La descripción detallada de la tarea.
+- Prioridad: La prioridad asignada a la tarea (baja, media, alta).
+- Fecha de Vencimiento: La fecha límite para completar la tarea.
+- Categoría: La categoría a la que pertenece la tarea.
+- ID_Usuario: El identificador del usuario que posee la tarea (clave foránea).
+
+3- Relación Posee:
+
+- Esta relación vincula al Usuario con la Tarea.
+- La cardinalidad 1 indica que un usuario puede tener muchas tareas, pero cada tarea pertenece a un solo usuario.
