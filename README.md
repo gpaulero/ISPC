@@ -111,9 +111,12 @@ gestor_tareas/
 3. Relaciones y Cardinalidades
 - Usuario - Tarea
 - Relación: "Posee"
-- Cardinalidad:
-- Un Usuario puede poseer muchas Tareas (1).
-- Una Tarea es poseída por un solo Usuario (N:1).
+
+**Cardinalidad:**
+
+  Un Usuario puede poseer muchas Tareas (1).
+
+  Una Tarea es poseída por un solo Usuario (N:1).
 
 # **Descripción del Diagrama ER**
 
