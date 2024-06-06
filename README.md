@@ -93,19 +93,19 @@ gestor_tareas/
 
 1. Usuario
 
-- ID_Usuario (Clave primaria)
-- Nombre
-- Correo Electrónico
+- ID_Usuario (Clave primaria) (VARCHAR 45)
+- Nombre (VARCHAR 45)
+- Correo Electrónico (VARCHAR 45)
 
 2. Tarea
 
-- ID_Tarea (Clave primaria)
-- Título
-- Descripción
-- Prioridad
-- Fecha de Vencimiento
-- Categoría
-- ID_Usuario (Clave foránea)
+- ID_Tarea (Clave primaria) (VARCHAR 45)
+- Título (VARCHAR 45)
+- Descripción (VARCHAR 45)
+- Prioridad (VARCHAR 45)
+- Fecha de Vencimiento (DATE)
+- Categoría (VARCHAR 45)
+- ID_Usuario (Clave foránea) (VARCHAR 45)
 
 3. Relaciones y Cardinalidades
 - Usuario - Tarea
