@@ -76,14 +76,33 @@ gestor_tareas/
 ├── menu.py
 
 **Descripción de los Archivos**
+El proyecto está modularizado en varios archivos Python para mantener una estructura clara y organizada. A continuación se describen los archivos y su propósito:
 
-1- main.py: Archivo principal de la aplicación. Contiene el menú de opciones y hace uso de funciones definidas en otros módulos.
+### Archivos
 
-2- tareas.py: Contiene las funciones relacionadas con la gestión de tareas (crear, ver, editar, eliminar). En esta etapa, las funciones solo imprimen mensajes.
+1. **main.py**
+   - Este es el archivo principal de la aplicación.
+   - Contiene la función `main()` que inicia la aplicación y muestra el menú principal llamando a `mostrar_menu_principal()`.
 
-3- usuarios.py: Contiene las funciones relacionadas con la gestión de usuarios. En esta etapa, las funciones solo imprimen mensajes.
+2. **tareas.py**
+   - Contiene las funciones relacionadas con la gestión de tareas.
+   - Funciones:
+     - `crear_tarea()`: Imprime un mensaje indicando que se ha seleccionado la opción de crear una tarea.
+     - `ver_tareas()`: Imprime un mensaje indicando que se ha seleccionado la opción de ver todas las tareas.
+     - `editar_tarea()`: Imprime un mensaje indicando que se ha seleccionado la opción de editar una tarea.
+     - `eliminar_tarea()`: Imprime un mensaje indicando que se ha seleccionado la opción de eliminar una tarea.
 
-4- menu.py: Contiene la lógica para mostrar el menú y manejar la navegación del usuario. Llama a las funciones definidas en tareas.py y usuarios.py.
+3. **usuarios.py**
+   - Contiene las funciones relacionadas con la gestión de usuarios.
+   - Funciones:
+     - `crear_usuario()`: Imprime un mensaje indicando que se ha seleccionado la opción de crear un usuario.
+     - `ver_usuarios()`: Imprime un mensaje indicando que se ha seleccionado la opción de ver todos los usuarios.
+     - `editar_usuario()`: Imprime un mensaje indicando que se ha seleccionado la opción de editar un usuario.
+     - `eliminar_usuario()`: Imprime un mensaje indicando que se ha seleccionado la opción de eliminar un usuario.
+
+4. **menu.py**
+   - Contiene la lógica para mostrar el menú principal y manejar la navegación del usuario.
+   - Llama a las funciones definidas en `tareas.py` y `usuarios.py`.
 
 
 # **Diagrama de Entidad-Relación (ERD)**
@@ -94,23 +113,23 @@ gestor_tareas/
 
 1. Usuario
 
-- ID_Usuario (Clave primaria) (VARCHAR 45)
-- Nombre (VARCHAR 45)
-- Correo Electrónico (VARCHAR 45)
+  - ID_Usuario (Clave primaria) (VARCHAR 45)
+  - Nombre (VARCHAR 45)
+  - Correo Electrónico (VARCHAR 45)
 
 2. Tarea
 
-- ID_Tarea (Clave primaria) (VARCHAR 45)
-- Título (VARCHAR 45)
-- Descripción (VARCHAR 45)
-- Prioridad (VARCHAR 45)
-- Fecha de Vencimiento (DATE)
-- Categoría (VARCHAR 45)
-- ID_Usuario (Clave foránea) (VARCHAR 45)
+  - ID_Tarea (Clave primaria) (VARCHAR 45)
+  - Título (VARCHAR 45)
+  - Descripción (VARCHAR 45)
+  - Prioridad (VARCHAR 45)
+  - Fecha de Vencimiento (DATE)
+  - Categoría (VARCHAR 45)
+  - ID_Usuario (Clave foránea) (VARCHAR 45)
 
 3. Relaciones y Cardinalidades
-- Usuario - Tarea
-- Relación: "Posee"
+  - Usuario - Tarea
+  - Relación: "Posee"
 
 **Cardinalidad:**
 
