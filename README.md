@@ -88,6 +88,7 @@ gestor_tareas/
 
 # **Diagrama de Entidad-Relación (ERD)**
 ![Diagrama](https://github.com/gpaulero/ISPC/assets/169163764/2478ea6a-0f54-40ec-ab90-caf05bb0c8cc)
+![diagrama crow's foot](https://github.com/gpaulero/ISPC/assets/169163764/1496f800-7e4f-4381-a69c-36eac20dab90)
 
 **Entidades y Atributos**
 
@@ -124,7 +125,6 @@ gestor_tareas/
 ID_Usuario: Un identificador único para cada usuario.
 - Nombre: El nombre del usuario.
 - Correo Electrónico: El correo electrónico del usuario.
-- Contraseña: La contraseña del usuario para acceder a la aplicación.
 
 2- Entidad Tarea:
 
