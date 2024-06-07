@@ -104,6 +104,89 @@ El proyecto está modularizado en varios archivos Python para mantener una estru
    - Contiene la lógica para mostrar el menú principal y manejar la navegación del usuario.
    - Llama a las funciones definidas en `tareas.py` y `usuarios.py`.
 
+# Aplicación
+
+# menu.py
+
+from tareas import crear_tarea, ver_tareas, editar_tarea, eliminar_tarea
+
+def mostrar_menu_principal():
+
+    print("\n=== Menú Principal ===")
+    print("1. Crear una nueva tarea")
+    print("2. Ver todas las tareas")
+    print("3. Editar una tarea")
+    print("4. Eliminar una tarea")
+    print("5. Salir")
+    opcion = input("Seleccione una opción: ")
+
+    if opcion == "1":
+        crear_tarea()
+    elif opcion == "2":
+        ver_tareas()
+    elif opcion == "3":
+        editar_tarea()
+    elif opcion == "4":
+        eliminar_tarea()
+    elif opcion == "5":
+        print("Gracias por usar el Gestor de Tareas Personales")
+        exit()
+    else:
+        print("Opción inválida. Por favor, intente de nuevo.")
+
+# main.py
+
+from menu import mostrar_menu_principal
+
+def main():
+
+    print("Bienvenido al Gestor de Tareas Personales")
+    while True:
+        mostrar_menu_principal()
+
+if __name__ == "__main__":
+
+    main()
+
+
+# tareas.py
+
+def crear_tarea():
+
+    print("Opción seleccionada: Crear una nueva tarea")
+
+def ver_tareas():
+
+    print("Opción seleccionada: Ver todas las tareas")
+
+def editar_tarea():
+
+    print("Opción seleccionada: Editar una tarea")
+
+def eliminar_tarea():
+
+    print("Opción seleccionada: Eliminar una tarea")
+
+
+# usuarios.py
+
+def crear_usuario():
+
+    print("Opción seleccionada: Crear un nuevo usuario")
+
+def ver_usuarios():
+
+    print("Opción seleccionada: Ver todos los usuarios")
+
+def editar_usuario():
+
+    print("Opción seleccionada: Editar un usuario")
+
+def eliminar_usuario():
+
+    print("Opción seleccionada: Eliminar un usuario")
+
+
 
 # **Diagrama de Entidad-Relación (ERD)**
 ![Diagrama](https://github.com/gpaulero/ISPC/assets/169163764/2478ea6a-0f54-40ec-ab90-caf05bb0c8cc)
