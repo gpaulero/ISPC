@@ -17,9 +17,15 @@ El Gestor de Tareas Personales es una aplicación diseñada para ayudar a los us
 Los usuarios podrán crear, editar y eliminar tareas, así como asignarles prioridades y fechas de vencimiento. 
 La aplicación también permitirá la categorización de tareas y ofrecerá recordatorios para garantizar que los usuarios no olviden sus compromisos.
 
+**Problema a Resolver**
+
+El problema que se quiere resolver es la gestión eficiente de tareas personales. Muchas personas tienen dificultades para organizar y recordar sus tareas diarias, lo que puede llevar a olvidos y falta de productividad. La aplicación propuesta, Gestor de Tareas Personales, tiene como objetivo proporcionar una solución fácil de usar para organizar, priorizar y recordar las tareas pendientes.
+
 **Análisis del Proyecto: Gestor de Tareas Personales**
 
 **Objetivos del Proyecto**
+
+Requisitos Funcionales
 
 1- Organización Eficiente de Tareas:
 
@@ -41,6 +47,10 @@ La aplicación también permitirá la categorización de tareas y ofrecerá reco
 - Asegurar que los usuarios reciban retroalimentación inmediata sobre las acciones realizadas (creación, edición, eliminación de tareas).
 - Proporcionar mensajes de confirmación y agradecimiento para mejorar la satisfacción del usuario.
 
+5- Consultas SQL:
+
+- Consultas básicas para gestionar y filtrar tareas.
+- Consultas avanzadas para buscar tareas por diferentes criterios (fecha, prioridad, etc.).
 
 Alcance del Proyecto
 
@@ -106,6 +116,8 @@ El proyecto está modularizado en varios archivos Python para mantener una estru
 
 # Aplicación
 
+Para implementar la aplicación Gestor de Tareas Personales utilizando Python y una base de datos MySQL, seguiremos un enfoque modular. Este desarrollo incluirá el CRUD (Crear, Leer, Actualizar, Eliminar) de las tablas de la base de datos.
+
 # menu.py
 
 from tareas import crear_tarea, ver_tareas, editar_tarea, eliminar_tarea
@@ -151,6 +163,9 @@ if __name__ == "__main__":
 
 # tareas.py
 
+from bd import ejecutar_consulta, obtener_datos
+
+
 def crear_tarea():
 
     print("Opción seleccionada: Crear una nueva tarea")
@@ -170,6 +185,8 @@ def eliminar_tarea():
 
 # usuarios.py
 
+from bd import ejecutar_consulta, obtener_datos
+
 def crear_usuario():
 
     print("Opción seleccionada: Crear un nuevo usuario")
@@ -185,6 +202,38 @@ def editar_usuario():
 def eliminar_usuario():
 
     print("Opción seleccionada: Eliminar un usuario")
+
+# bd.py
+
+import mysql.connector
+
+def conectar():
+
+    return mysql.connector.connect(
+        host="localhost",
+        user="tu_usuario",
+        password="tu_contraseña",
+        database="gestor_tareas"
+    )
+
+def ejecutar_consulta(query, params=None):
+
+    conn = conectar()
+    cursor = conn.cursor()
+    cursor.execute(query, params)
+    conn.commit()
+    cursor.close()
+    conn.close()
+
+def obtener_datos(query, params=None):
+
+    conn = conectar()
+    cursor = conn.cursor(dictionary=True)
+    cursor.execute(query, params)
+    resultados = cursor.fetchall()
+    cursor.close()
+    conn.close()
+    return resultados
 
 
 
