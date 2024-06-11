@@ -286,8 +286,82 @@ ID_Usuario: Un identificador único para cada usuario.
 - Fecha de Vencimiento: La fecha límite para completar la tarea.
 - Categoría: La categoría a la que pertenece la tarea.
 - ID_Usuario: El identificador del usuario que posee la tarea (clave foránea).
+  
 
 3- Relación Posee:
 
 - Esta relación vincula al Usuario con la Tarea.
 - La cardinalidad 1 indica que un usuario puede tener muchas tareas, pero cada tarea pertenece a un solo usuario.
+
+# **Requisitos, pasos para su instalacion y uso.**
+
+Para que una persona externa pueda entender y utilizar la aplicación "Gestor de Tareas Personales", debe proporcionar una descripción detallada del proyecto.
+
+## Requisitos
+
+### Software
+- Python 3.x
+- MySQL Server
+
+### Librerías Python
+- `mysql-connector-python
+
+# **Instalar Dependencias**
+
+pip install -r requirements.txt
+
+
+##Configurar la Base de Datos##
+
+Iniciar MySQL Server.
+
+Crear la base de datos:
+- Ejecutar el script de estructura de base de datos
+- Ejecutar el script de inserción de datos:
+
+# **Uso de la Aplicación**
+
+- Menú Principal
+
+- Crear una nueva tarea
+
+- Ver todas las tareas
+
+- Editar una tarea
+
+- Eliminar una tarea
+
+- Salir
+
+**Funcionalidades**
+
+Crear tarea: Permite al usuario agregar una nueva tarea con detalles como nombre, prioridad y fecha de vencimiento.
+
+Ver tareas: Muestra una lista de todas las tareas guardadas en la base de datos.
+
+Editar tarea: Permite modificar los detalles de una tarea existente.
+
+Eliminar tarea: Elimina una tarea seleccionada de la base de datos.
+
+Salir: Cierra la aplicación.
+
+
+**Documentación**
+
+ER Diagram: [Diagrama.png](https://github.com/gpaulero/ISPC/blob/main/Diagrama.png)
+
+Crow Foot Diagram: [Diagrama crow's foot.png](https://github.com/gpaulero/ISPC/blob/main/diagrama%20crow's%20foot.png)
+
+**Contribución**
+
+Si deseas contribuir a este proyecto, por favor, sigue estos pasos:
+
+- Haz un fork del proyecto.
+
+- Crea una nueva rama (git checkout -b nueva-rama).
+
+- Realiza tus cambios y haz commit (git commit -m 'Añadir nueva característica').
+
+- Haz push a la rama (git push origin nueva-rama).
+
+- Abre un Pull Request.
