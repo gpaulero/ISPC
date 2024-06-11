@@ -114,6 +114,9 @@ El proyecto está modularizado en varios archivos Python para mantener una estru
    - Contiene la lógica para mostrar el menú principal y manejar la navegación del usuario.
    - Llama a las funciones definidas en `tareas.py` y `usuarios.py`.
 
+5. **bd.py**
+   - Funciones para la conexión y operaciones con la base de datos.
+
 # Aplicación
 
 Para implementar la aplicación Gestor de Tareas Personales utilizando Python y una base de datos MySQL, seguiremos un enfoque modular. Este desarrollo incluirá el CRUD (Crear, Leer, Actualizar, Eliminar) de las tablas de la base de datos.
