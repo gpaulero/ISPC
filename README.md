@@ -85,6 +85,8 @@ gestor_tareas/
 
 ├── menu.py
 
+├── bd.py
+
 **Descripción de los Archivos**
 El proyecto está modularizado en varios archivos Python para mantener una estructura clara y organizada. A continuación se describen los archivos y su propósito:
 
