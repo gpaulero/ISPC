@@ -121,7 +121,7 @@ El proyecto está modularizado en varios archivos Python para mantener una estru
 
 # Aplicación
 
-Para implementar la aplicación Gestor de Tareas Personales utilizando Python y una base de datos MySQL, seguiremos un enfoque modular. Este desarrollo incluirá el CRUD (Crear, Leer, Actualizar, Eliminar) de las tablas de la base de datos.
+Para implementar la aplicación Gestor de Tareas Personales utilizando Python y una base de datos MySQL, seguimos un enfoque modular. Este desarrollo incluirá el CRUD (Crear, Leer, Actualizar, Eliminar) de las tablas de la base de datos.
 
 # menu.py
 
@@ -299,8 +299,6 @@ ID_Usuario: Un identificador único para cada usuario.
 - La cardinalidad 1 indica que un usuario puede tener muchas tareas, pero cada tarea pertenece a un solo usuario.
 
 # **Requisitos, pasos para su instalacion y uso.**
-
-Para que una persona externa pueda entender y utilizar la aplicación "Gestor de Tareas Personales", debe proporcionar una descripción detallada del proyecto.
 
 ## Requisitos
 
